@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <external-path name="share_name" path="."/>
+    <!-- @@@@ java.lang.IllegalArgumentException: Failed to find configured root that contains が発生。pathを"."にしたら修正された-->
+    <!-- https://cpoint-lab.co.jp/article/201903/8735/ -->
+    <!-- <external-path name="share_name" path="share_name/"/> -->
+</paths>
