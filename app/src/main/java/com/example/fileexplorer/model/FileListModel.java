@@ -78,6 +78,7 @@ public class FileListModel {
 
     //memo:
     private FileListItem getPrevDir() {
+        LogUtil.d( "getPrevDir START"); //FEA001
         if (hasPreviousDir()) {
             FileListItem file_list_item = mHistoryListItems.peek();
             LogUtil.d( "HistoryList is " + FileListItem.getLogFileListItem(file_list_item));
@@ -90,6 +91,7 @@ public class FileListModel {
 
     //Returns a sorted list of all dirs and files in a given directory.
     public List<FileListItem> getAllFiles(@org.jetbrains.annotations.NotNull FileListItem file_list_item) {
+        LogUtil.d( "getAllFiles START"); //FEA002
         //memo:ここでnullが帰ってくる理由はパーミッション問題だった
         File[] allFiles = file_list_item.getFile().listFiles();
 
@@ -127,12 +129,14 @@ public class FileListModel {
 
         @Override
         public int compare(FileListItem p1, FileListItem p2) {
+            LogUtil.d( "compare START"); //FEA002
             return p1.getFile().compareTo(p2.getFile());
         }
     }
 
     //Try to determine the mime type of a file based on extension.
     public String getMimeType(Uri uri) {
+        LogUtil.d( "compare START"); //FEA003
         String mimeType = null;
 
         String extension = MimeTypeMap.getFileExtensionFromUrl(uri.getPath());
@@ -141,6 +145,7 @@ public class FileListModel {
 
             mimeType = MimeTypeMap.getSingleton().getMimeTypeFromExtension(extension);
         }
+        LogUtil.d( "compare END"); //FEA004
         return mimeType;
     }
 
