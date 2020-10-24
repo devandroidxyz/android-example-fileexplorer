@@ -90,6 +90,7 @@ public class FileListModel {
 
     //Returns a sorted list of all dirs and files in a given directory.
     public List<FileListItem> getAllFiles(@org.jetbrains.annotations.NotNull FileListItem file_list_item) {
+        //dev001 getAllFiles START amend
         //memo:ここでnullが帰ってくる理由はパーミッション問題だった
         File[] allFiles = file_list_item.getFile().listFiles();
 
@@ -120,6 +121,7 @@ public class FileListModel {
         alls.addAll(dirs);
         alls.addAll(files);
 
+        //dev001 getAllFiles END amend
         return alls;
     }
 
