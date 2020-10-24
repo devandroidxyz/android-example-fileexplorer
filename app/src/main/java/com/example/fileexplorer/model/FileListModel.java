@@ -133,6 +133,7 @@ public class FileListModel {
 
     //Try to determine the mime type of a file based on extension.
     public String getMimeType(Uri uri) {
+        //dev001 getMimeType is call
         String mimeType = null;
 
         String extension = MimeTypeMap.getFileExtensionFromUrl(uri.getPath());
