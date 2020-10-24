@@ -127,7 +127,9 @@ public class FileListModel {
 
         @Override
         public int compare(FileListItem p1, FileListItem p2) {
+            //dev001 compare START
             return p1.getFile().compareTo(p2.getFile());
+            //dev001 compare END
         }
     }
 
