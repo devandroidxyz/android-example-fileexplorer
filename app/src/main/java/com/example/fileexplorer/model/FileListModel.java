@@ -75,6 +75,7 @@ public class FileListModel {
         //dev001 setPreviousListItems START
         LogUtil.d( "PreviousList & HistoryList is " + FileListItem.getLogFileListItem(previous_list_items) );
         mHistoryListItems.add(previous_list_items);
+        //dev001 setPreviousListItems END
     }
 
     //memo:
