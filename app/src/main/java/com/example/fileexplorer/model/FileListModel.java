@@ -78,6 +78,7 @@ public class FileListModel {
 
     //memo:
     private FileListItem getPrevDir() {
+        //dev001 getPrevDir START
         if (hasPreviousDir()) {
             FileListItem file_list_item = mHistoryListItems.peek();
             LogUtil.d( "HistoryList is " + FileListItem.getLogFileListItem(file_list_item));
@@ -86,6 +87,7 @@ public class FileListModel {
             LogUtil.d( "getPrevDir is null");
             return null;
         }
+        //dev001 getPrevDir END
     }
 
     //Returns a sorted list of all dirs and files in a given directory.
