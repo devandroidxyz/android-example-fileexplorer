@@ -72,6 +72,7 @@ public class FileListModel {
 
     //set the previous dir for navigation.
     public void setPreviousListItems(FileListItem previous_list_items) {
+        //dev001 setPreviousListItems START
         LogUtil.d( "PreviousList & HistoryList is " + FileListItem.getLogFileListItem(previous_list_items) );
         mHistoryListItems.add(previous_list_items);
     }
