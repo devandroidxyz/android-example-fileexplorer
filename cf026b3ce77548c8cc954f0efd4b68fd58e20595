@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8dde459c_77f4af63",
+        "filename": "app/src/main/java/com/example/fileexplorer/model/FileListModel.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 136,
+      "author": {
+        "id": 1018397
+      },
+      "writtenOn": "2020-10-24T00:18:16Z",
+      "side": 1,
+      "message": "test OK",
+      "range": {
+        "startLine": 136,
+        "startChar": 10,
+        "endLine": 136,
+        "endChar": 16
+      },
+      "revId": "cf026b3ce77548c8cc954f0efd4b68fd58e20595",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
