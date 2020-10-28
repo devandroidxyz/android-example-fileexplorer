@@ -56,6 +56,7 @@ public class FileListModel {
 
     //set the current directory.
     public void setCurrentListItems(FileListItem current_list_items) {
+        //rel001 setCurrentListItems START
         LogUtil.d( "CurrentList is " + FileListItem.getLogFileListItem(current_list_items) );
         this.mCurrentListItems = current_list_items;
     }
