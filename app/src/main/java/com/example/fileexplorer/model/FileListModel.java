@@ -59,6 +59,7 @@ public class FileListModel {
         //rel001 setCurrentListItems START
         LogUtil.d( "CurrentList is " + FileListItem.getLogFileListItem(current_list_items) );
         this.mCurrentListItems = current_list_items;
+        //rel001 setCurrentListItems END
     }
 
     //Returns whether or not we have a previous dir in our history.  If the stack is not empty, we have one.
