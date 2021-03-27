@@ -21,8 +21,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//@@@@
-        //        getActionBar().setDisplayHomeAsUpEnabled(true);
+        //@@@@
+        //getActionBar().setDisplayHomeAsUpEnabled(true);
         setContentView(R.layout.main_activity);
 
         //パーミッション許可確認
@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void getFragment(){
-
+        // getFragment()
         UIView list = new UIView();
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.file_list, list)
